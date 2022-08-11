@@ -1,0 +1,397 @@
+*{
+    margin:0;
+    padding:0;
+}
+.div{
+    display: block;
+}
+.main-detail{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+.info-movie{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 20px);
+    background-color: #fff;
+}
+.name-movie{
+    padding: 10px;
+    background: #404040;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    border-top: 2px solid #000;
+}
+.heading-movie{
+    display: none;
+    align-items: center;
+    color: #fff;
+    background-color: #191919;
+    border-radius: 0 !important;
+}
+.heading-movie_left{
+    padding: 30px;
+    background: #000;
+}
+.heading-movie_right{
+    margin-left: 10px;
+    width: 81%;
+}
+.heading-movie_img{
+    width: 100%;
+    display: block;
+}
+.name_other,
+.type_other,
+.status_other,
+.score_other,
+.time-update_other,
+.duration_other{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2f2f2f;
+    padding: 5px;
+}
+.other-left{
+    flex: .2;
+    padding: 10px 5px;
+    font-weight: 500;
+    color: #a7a7a7;
+}
+
+.other-right{
+    flex: .8;
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: 500;
+    color: #a7a7a7;
+}
+.type-other_link{
+    background: #313131;
+    border-radius: 5px;
+    padding: 5px ;
+    margin: 2px;
+    display: inline-flex;
+    color: #ccc;
+}
+.box-tool{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.box-tool_left{
+    flex: 1;
+    flex-wrap: wrap;
+}
+.box-tool_left--play{
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 2px;
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #25867d;
+    border-bottom: 3px solid #292929;
+    cursor: pointer;
+}
+.box-tool_left--follow{
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 0px 2px;
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #25867d;
+    border-bottom: 3px solid #292929;
+    cursor: pointer;
+}
+.box-tool_right--vote{
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 0px 2px;
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #986a25;
+    border-bottom: 3px solid #292929;
+    cursor: pointer;
+}
+.season-movie{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-bottom: 1px dashed #2f2f2f;
+    box-sizing: border-box;
+}
+.season-movie_heading{
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+.season-movie_body{
+    max-width: 100%;
+    white-space: nowrap;
+    padding: 5px 0;
+}
+.season-movie_body-link{
+    color: #fff;
+    font-weight: 500;
+    background: #3fd0d4;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.body-movie_info{
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #2f2f2f;
+}
+.movie_info-name{
+    margin: 10px 0px 0px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-size: 18px;
+    font-weight: 500;
+}
+.movie_info-genres{
+    display: flex;
+    margin-top: 10px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.movie_info-genres--left{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+.movie_info-genres--right{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.movie_info-genres--type{
+    margin: 0px 0px 0px 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: rgb(76, 147, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.movie_info-name--realease{
+    margin: 10px 0px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    padding-bottom: 10px;
+}
+.body-movie{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #292929;
+}
+.list-episode{
+    flex: 0.3;
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: 550;
+}
+.list-episode_heading{
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.list-episode_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+.episode{
+    background: #3fd0d4;
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    width: 25%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.episode:hover{
+    background-color: #25867d;
+}
+.body-movie_content{
+    flex: 0.69;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.body-movie_info--heading{
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+.body-movie_content--heading{
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+.movie-content_text{
+    font-size: 15px;
+    margin: 10px 0px 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+.comment-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.comment-movie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comment-left{
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ccc964;
+}
+.comment-left i{
+    margin: 0 5px;
+}
+.comment-right i{
+    font-size: 30px;
+    padding: 5px 10px 0 0;
+    cursor: pointer;
+    color: #fff;
+}
+.comment-login{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.comment-login_btn{
+    font-weight: 550;
+    color: #fff;
+    background-color: #3fd0d4;
+    border-radius: 5px;
+    margin: 0 2px;
+    padding: 10px;
+    border-bottom: 3px solid #292929;
+    cursor: pointer;
+}
+.comment-area{
+    margin-top: 10px;
+}
+.comment-area_content{
+    position: relative;
+}
+.comment-user{
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.comment-user_avatar{
+    width: 50px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    border: 3px solid #656565;
+    border-radius: 10px;
+}
+.comment-user_right{
+    flex: 1;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.comment-user_right--user{
+    display: flex;
+    flex-direction: column;
+}
+.comment-user_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-nickname{
+    font-weight: 700;
+    color: #000;
+    margin-right: 5px;
+}
+.comment-user_right--content{
+    padding: 5px 0 8px;
+    word-break: break-all;
+    color: #000;
+    font-size: 13px;
+}
+.comment-user_right--time{
+    padding: 5px 0 8px;
+    word-break: break-all;
+    color: #000;
+    font-size: 13px;
+}
+.comment-more{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+}
+.comment-more_btn{
+    color: #fff;
+    width: 100%;
+    background-color: #3fd0d4;
+    border-radius: 5px;
+    margin: 0 2px;
+    padding: 10px;
+    border-bottom: 3px solid #292929;
+    cursor: pointer;
+}
+.movie-watch{
+    display: block;
+}
+.videoShow{
+    width: 100%;
+}
+.episode-num{
+    font-weight: 500;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+.active{
+    background-color: #25867d;
+}

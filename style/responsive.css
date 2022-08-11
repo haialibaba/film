@@ -1,0 +1,53 @@
+@media (min-width:840px) and (max-width:1024px) {
+    .header-search{
+        margin-right: -50px;
+    }
+    .header-search_input{
+        width: 400px;
+    }
+
+}
+@media(max-width:839px){
+    .header-search_input{
+        display: none;
+    }
+    .header-search_btn i{
+        display: none;
+    }
+    .video{
+        flex-basis: 33.33333333333%;
+    }
+    .list-episode{
+        flex: 0.5;
+    }
+    .body-movie_content{
+        flex: 0.49;
+    }
+
+}
+@media(max-width:740px){
+    .video{
+        flex-basis: 48%;
+    }
+    .movie{
+        width: 100%;
+        flex: 1;
+    }
+    .category{
+        display: none;
+    }
+    .body-movie{
+        display: block;
+    }
+    .episode{
+        width: 20%;
+    }
+}
+@media(max-width:700px){
+    .other-left{
+        display: none;
+    }
+    .name_other, .type_other, .status_other, .score_other, .time-update_other, .duration_other {
+        display: block;
+    }
+}

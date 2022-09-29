@@ -609,6 +609,9 @@ if(type == 'phimngan' && !getQueryVariable('id')){
 else
 if(type == 'tv' && !getQueryVariable('id')){
     loadapiTV();
+}else
+if(category == 'trending'){
+    loadTrending  ();
 }
 else
 if(category == 'movie_popular'){
@@ -996,16 +999,19 @@ function showVideo(){
 
 //search
 async function search(){
+
+    document.querySelector(".result-search_wrap").innerHTML = ""; 
     const searchMovie = document.querySelector('.header-search_input').value;
     if(searchMovie == ""){
     document.querySelector('.search-container').style.display = "none";
 
     }else{
+        
     document.querySelector('.search-container').style.display = "block";
         var key="1d8335abc1492efbcd1a65f823ca848c";
         var api=`https://api.themoviedb.org/3/search/multi?api_key=${key}&language=en-US&page=1&include_adult=false&&query=${searchMovie}`;    
         var res= await fetch(api);
-        var data = await res.json();
+        const data = await res.json();
         data.results.forEach(element => {
         document.querySelector(".result-search_wrap").innerHTML +=`
         <div class="result-search">

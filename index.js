@@ -270,7 +270,7 @@ async function loadTrending(){
         
         <div class="video">
         <div class="video-content">
-        <a href="detail.html?id=${element.id}" >
+        <a href="detail.html?type=movie&&id=${element.id}" >
             <img src="${getImage300(element.backdrop_path||element.poster_path)}" alt="" class="video-content_img">
             </a>
             <a href="detail.html?id=${element.id}" >
